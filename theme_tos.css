@@ -199,10 +199,19 @@ main {
   padding: 0.3rem;
   display: inline-flex;
 }
-.icon-link:hover, .icon-link:focus {
+.icon-link:hover,
+.icon-link:focus {
   color: var(--accent2);
   background: #20222430;
   filter: drop-shadow(0 0 14px #2cb67d88);
+}
+/* ✅ Prevent icons from staying colored after click */
+.icon-link:visited,
+.icon-link:active,
+.icon-link:focus-visible {
+  color: var(--accent);
+  background: none;
+  filter: drop-shadow(0 0 8px #7f5af055);
 }
 
 /* Footer */
