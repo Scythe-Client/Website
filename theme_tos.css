@@ -198,6 +198,7 @@ main {
   border-radius: 50%;
   padding: 0.3rem;
   display: inline-flex;
+  text-decoration: none;
 }
 .icon-link:hover,
 .icon-link:focus {
@@ -207,8 +208,8 @@ main {
 }
 /* ✅ Prevent icons from staying colored after click */
 .icon-link:visited,
-.icon-link:active,
-.icon-link:focus-visible {
+.icon-link:focus-visible,
+.icon-link:active {
   color: var(--accent);
   background: none;
   filter: drop-shadow(0 0 8px #7f5af055);
